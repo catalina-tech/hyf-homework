@@ -1,7 +1,5 @@
 // FreeCodeCamp user: https://www.freecodecamp.org/catalina-tech
 
-
-
 // Age-ify (A future age calculator)
 
 let yearOfBirth;
@@ -13,7 +11,7 @@ yearFuture = 2028;
 console.log(typeof yearFuture);
 
 let age = yearFuture - yearOfBirth;
-console.log("You will be" + " " + age + " " + "in" + " " + yearFuture); 
+console.log("You will be " + age + " in " + yearFuture); 
 
 
 
@@ -35,20 +33,15 @@ let dogYearOld = dogYear*7;
 let shouldShowResultInDogYears = false;
 
 if (shouldShowResultInDogYears) {
-    console.log("Your dog will be" + " " + dogYearOld + " " + "dog years old in " + dogYearFuture);    
+    console.log("Your dog will be " + dogYearOld + " dog years old in " + dogYearFuture);    
 } else {
-    console.log("Your dog will be" + " " + dogYear + " " + "human years in " + dogYearFuture);  
+    console.log("Your dog will be " + dogYear + " human years in " + dogYearFuture);  
 };
 
 
 
 
 //Housey pricey (A house price estimator)
-
-let volumeInMeters;
-let gardenSizeinM2;
-let housePrice;
-housePrice = (volumeInMeters * 2.5 * 1000) + (gardenSizeinM2 * 300);
 
 let peterHouseWide = 8;
 let peterHouseDeep = 10;
@@ -59,13 +52,13 @@ let volumeInMetersPeterHouse = (peterHouseDeep*peterHouseHigh*peterHouseWide);
 
 let peterHouse;
 peterHouse = (volumeInMetersPeterHouse * 2.5 * 1000) + (peterGardenSize * 300);
-peterHouseExtraMoney = 2500000 - peterHouse;
+peterHouseExtraMoney = peterHousePrice - peterHouse;
 //console.log(peterHouse);
 
-if(peterHouse < 2500000) {
-    console.log("Peter is paying more for the house - the cost of the house is: " + " " + peterHousePrice + " and the actual price of the house is according to the formula is " + " " + peterHouse + " " + "peter is paying " + peterHouseExtraMoney + " " + "extra money");
+if(peterHouse < peterHousePrice) {
+    console.log("Peter is paying more for the house - the cost of the house is: " + peterHousePrice + " and the actual price of the house is " + peterHouse + " peter is paying " + peterHouseExtraMoney + " extra money");
 } else {
-    console.log("Peter is paying less for the house, the actual price of the house is: " + " " + peterHouse)
+    console.log("Peter is paying less for the house, the actual price of the house is: " + peterHouse)
 }
 
 let juliaHouseWide = 5;
@@ -77,13 +70,13 @@ let volumeInMetersJuliaHouse = (juliaHouseDeep*juliaHouseHigh*juliaHouseWide);
 
 let juliaHouse;
 juliaHouse = (volumeInMetersJuliaHouse * 2.5 * 1000) + (juliaGardenSize * 300);
-juliaHouseExtraMoney = juliaHouse - 1000000;
+juliaHouseExtraMoney = juliaHouse - juliaHousePrice;
 //console.log(juliaHouse);
 
-if(juliaHouse < 1000000){
-    console.log("Julia is paying more for the house - price house is: " + " " + juliaHousePrice + " and the actual price if the house is" + " " + juliaHouse + " " + "julia is paying " + juliaHouseExtraMoney + " " + "extra money");
+if(juliaHouse < juliaHousePrice){
+    console.log("Julia is paying more for the house - price house is: " + juliaHousePrice + " and the actual price if the house is " + juliaHouse + " julia is paying " + juliaHouseExtraMoney + " extra money");
 } else {
-    console.log("Julia is paying less for the house, the actual price of the house is: " + juliaHouse + " and julia is saving " + "" + juliaHouseExtraMoney);
+    console.log("Julia is paying less for the house, the actual price of the house is: " + juliaHouse + " and not " + juliaHousePrice + " and julia is saving  " + juliaHouseExtraMoney);
 };
 
 
