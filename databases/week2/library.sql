@@ -1,5 +1,7 @@
 -- Active: 1719743290311@@0.0.0.0@3306@homework
 
+-- Creating a database
+
 -- Creating the Books table
 CREATE TABLE Books (
     id INT AUTO_INCREMENT PRIMARY KEY,
